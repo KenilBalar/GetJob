@@ -1,0 +1,5 @@
+
+
+function onTitleClick(){
+  location.reload(); 
+}
