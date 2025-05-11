@@ -1,0 +1,18 @@
+:root {
+  --primary-color: hsl(190, 53%, 39%);
+  --secondary-color: hsl(0, 0%, 96%);
+  --text-color: hsl(0, 0%, 18%);
+  --footer-text-color: white;
+
+  --font-small: 0.9rem;
+  --font-regular: 1rem;
+  --font-large: 1.5rem;
+  --font-largest: 2rem;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+
+  --border-radius: 5px;
+}
