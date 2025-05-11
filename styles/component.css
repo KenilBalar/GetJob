@@ -1,0 +1,217 @@
+@import url('variables.css');
+
+/* General Reset for Components */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+     background-color: var(--primary-color);
+    color: var(--card-color);
+    padding: var(--space-md);
+    border: none;
+    font-weight: 600;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    font-size: var(--font-medium);
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+    transition: 0.2s;
+    transform: scaleX(99%) scaleY(99%);
+}
+
+button:disabled {
+    background-color: var(--primary-color-dark);
+    cursor: not-allowed;
+}
+
+/* Custom Textfield */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    max-width: 100%;
+    max-height: 20vh;
+    resize: vertical;
+    box-sizing: border-box;
+    padding: var(--space-sm);
+    font-size: var(--font-medium);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: var(--border-color);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Labels */
+label {
+    margin-bottom: -10px;
+    margin-top: 5px;
+    font-size: var(--font-medium);
+    color: var(--text-color);
+}
+
+/* Radio Buttons and Checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: var(--space-xs);
+}
+
+label[for="checkbox"],
+label[for="radio"] {
+    display: inline-block;
+    font-size: var(--font-medium);
+    margin-left: var(--space-xs);
+}
+
+/* Cards */
+.card {
+    background-color: var(--background-color);
+    padding: var(--space-lg);
+    border-radius: 20px;
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    margin-top: 20px;
+    margin: var(--space-lg) 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card h3{
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Header */
+.card-header {
+    font-size: var(--font-large);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    color: var(--primary-color);
+}
+
+/* Card Body */
+.card-body {
+    font-size: var(--font-medium);
+    color: var(--text-color);
+}
+
+/* Navigation Links in Cards */
+.card a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Modal/Popup */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: var(--space-lg);
+    width: 80%;
+    max-width: 500px;
+    display: none;
+    /* Hidden by default */
+    z-index: 1000;
+}
+
+.modal.open {
+    display: block;
+}
+
+.modal-header {
+    font-size: var(--font-large);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+}
+
+.modal-body {
+    font-size: var(--font-medium);
+    margin-bottom: var(--space-md);
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Form Elements Container */
+.job-form {
+    background-color: var(--card-color);
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    width: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: var(--space-md);
+    margin-top: 20px;
+}
+
+/* Form Submission Button */
+.submit-btn {
+    background-color: var(--primary-color);
+    color: var(--card-color);
+    padding: var(--space-md);
+    border: none;
+    font-weight: 600;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+.submit-btn:hover {
+    background-color: var(--hover-color);
+    transition: 0.2s;
+    transform: scaleX(99%) scaleY(99%);
+
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: var(--font-small);
+    margin-top: var(--space-xs);
+}

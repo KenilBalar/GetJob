@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Post Job | GetJob</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/component.css">
+
 </head>
-<body>
-    
+
+<body class="root">
+    <header class="headerBox">
+        <h1 id="headerTitle">GetJob</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="alljobs.html">All Jobs</a></li>
+                <li><a href="postjob.html" onclick="clearEditState()">Post Jobs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </ul>
+    </nav>
+
+    <main class="main-body">
+        <h1>📝 Post a New Job</h1>
+        <form id="jobForm" class="job-form">
+            <label for="jobTitle">Job Title</label>
+            <input type="text" id="jobTitle" placeholder="Enter job title" required>
+            <label for="jobDescription">Job Description</label>
+            <textarea id="jobDescription" rows="7" placeholder="Enter job description"></textarea>
+
+            <label for="jobType">Job Type</label>
+            <input type="text" id="jobType" placeholder="Enter job type">
+<br>
+            <button class="submit-btn">Post</button>
+        </form>
+    </main>
+
+    <footer class="footerBox">&copy; 2025 GetJob. All rights reserved.</footer>
+    <script src="/scripts/postjob.js"></script>
 </body>
+
 </html>

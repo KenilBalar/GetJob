@@ -1,8 +1,11 @@
 :root {
   --primary-color: hsl(190, 53%, 39%);
   --secondary-color: hsl(0, 0%, 96%);
+  --card-color: hsl(0, 0%, 100%);
   --text-color: hsl(0, 0%, 18%);
-  --footer-text-color: white;
+  --footer-text-color: hsl(0, 0%, 100%);
+  --hover-color: hsl(184, 62%, 24%);
+--border-color: hsl(0, 0%, 96%);
 
   --font-small: 0.9rem;
   --font-regular: 1rem;
