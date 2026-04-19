@@ -7,6 +7,10 @@ This project is created as a learning tool to understand how job portals work—
 
 ## 📸 UI Preview
 
+| Home Page (Updated UI with React.js) |
+|-----------|
+| ![Home Page](./assets/images/home-light.png) |
+
 | Home Page |
 |-----------|
 | ![Home Page](./assets/images/home.png) |
