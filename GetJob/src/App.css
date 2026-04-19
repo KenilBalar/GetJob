@@ -1,0 +1,17 @@
+.card {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  margin-top: 50px;
+  background: lightgray;
+}
+
+.badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: red;
+  color: var(--bg);
+  border-radius: 50%;
+  padding: 5px 10px;
+}

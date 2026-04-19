@@ -1,0 +1,148 @@
+:root {
+  --text-primary: #203634;
+  --text-secondary: #94bdb7;
+  --bg: #ffffff;
+  --surface: #cff8ef;
+  --accent-secondary: #8de4d4;
+  --accent-primary: #31a194;
+  --border: #d6d6d6;
+  --homeGradientPrimary: #8ce9d9;
+
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --boxShadow: 0px 0px 10px 0px var(--accent-primary);
+
+  --mono: ui-monospace, Consolas, monospace;
+
+  color-scheme: light dark;
+  font-family: "DM Sans", Roboto, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-primary: #d8e6e3;
+    --text-secondary: #34514a;
+    --bg: #101413;
+    --surface: #173a34;
+    --accent-secondary: #19413e;
+    --accent-primary: #25a691;
+    --border: #123e36;
+    --homeGradientPrimary: #104c42;
+
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #249f88; /* highlight color */
+  color: #ffffff; /* text color */
+}
+
+.focusedTextColor:hover {
+  color: var(--accent-primary);
+  font-weight: bold;
+}
+
+.primaryText {
+  color: var(--text-primary);
+}
+
+.secondaryText {
+  color: var(--text-secondary);
+}
+
+.textSizeExtraSmall {
+  font-size: 0.5rem;
+}
+
+.textSizeSmall {
+  font-size: 0.8rem;
+}
+
+.textSizeNormal {
+  font-size: 1rem;
+}
+
+.textSizeMedium {
+  font-size: 1.25rem;
+}
+
+.textSizeLarge {
+  font-size: 1.75rem;
+}
+
+.textSizeTitle {
+  font-size: 2.5rem;
+}
+
+.textSizeHeader {
+  font-size: 3.5rem;
+}
+
+.card {
+  gap: 1.5rem;
+  background-color: var(--bg);
+  padding: 16px;
+  border-radius: 20px;
+  box-shadow: var(--boxShadow);
+}
+
+.slideUp:hover {
+  transform: translateY(-15px);
+}
+
+.slideRight:hover {
+  transform: translateX(15px);
+}
+
+.smoothTransition {
+  transition: all 0.25s ease-in;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(16px);
+  }
+}
