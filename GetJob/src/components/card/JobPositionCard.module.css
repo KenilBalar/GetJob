@@ -1,0 +1,94 @@
+.jobPositionCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 280px;
+  transition: all 0.25s ease-in;
+}
+
+.jobPositionCard:hover {
+  background-color: var(--hover);
+  transform: scale(0.98);
+  box-shadow: var(--bg);
+}
+
+.logoContainer {
+  display: flex;
+  position: relative;
+
+  align-items: center;
+  justify-content: center;
+  clip-path: circle();
+  border-color: var(--accent-primary);
+  border-style: solid;
+  background-color: var(--bg);
+  border-radius: 50px;
+  width: 75px;
+  height: 75px;
+  margin-top: -40px;
+}
+.companyLogo {
+  width: 36px;
+  height: 36px;
+  color: var(--accent-primary);
+  object-fit: contain;
+}
+.companyName {
+  font-weight: bold;
+  margin-top: 1rem;
+  color: var(--accent-primary);
+}
+
+.jobTitle {
+  margin-top: 0.5rem;
+}
+
+.jobDetailsContainer {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  gap: 16px;
+  margin-top: 2rem;
+}
+
+.jobDetailItemSeparator {
+  width: 1px;
+  height: 50px;
+  margin: auto;
+  background-color: var(--border);
+}
+
+.briefcaseIcon {
+  color: var(--accent-primary);
+  width: auto;
+  height: 20px;
+  margin-bottom: -6px;
+}
+
+.jobDetailItem {
+  flex: 1;
+}
+.applyButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  position: relative;
+  background-color: var(--accent-primary);
+  color: var(--bg);
+  border: none;
+  padding: 8px 20px;
+  margin-top: auto;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.15s ease;
+}
+.applyButton:hover {
+  background-color: var(--bg);
+  color: var(--accent-primary);
+  border: 1px solid var(--accent-primary);
+  transition: all 0.25s ease;
+  transform: scale(0.95);
+}

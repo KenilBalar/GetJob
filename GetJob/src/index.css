@@ -8,12 +8,11 @@
   --border: #d6d6d6;
   --homeGradientPrimary: #8ce9d9;
 
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
-
   --boxShadow: 0px 0px 10px 0px var(--accent-primary);
+  --cardShadow: 0px 0px 10px 0px #b1d9d2;
 
   --mono: ui-monospace, Consolas, monospace;
+  --hover: #e9f5f6;
 
   color-scheme: light dark;
   font-family: "DM Sans", Roboto, sans-serif;
@@ -21,7 +20,6 @@
   background: var(--bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   @media (max-width: 1024px) {
@@ -38,7 +36,10 @@
     --accent-secondary: #19413e;
     --accent-primary: #25a691;
     --border: #123e36;
-    --homeGradientPrimary: #104c42;
+    --homeGradientPrimary: #0e413d;
+    --hover: #171d1c;
+
+    --cardShadow: 0px 0px 10px 0px #172828;
 
     --shadow:
       rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
@@ -62,6 +63,13 @@ body {
 ::selection {
   background: #249f88; /* highlight color */
   color: #ffffff; /* text color */
+}
+
+.cardLayout {
+  background-color: var(--bg);
+  padding: 16px;
+  border-radius: 30px;
+  box-shadow: var(--cardShadow);
 }
 
 .focusedTextColor:hover {
@@ -103,14 +111,6 @@ body {
 
 .textSizeHeader {
   font-size: 3.5rem;
-}
-
-.card {
-  gap: 1.5rem;
-  background-color: var(--bg);
-  padding: 16px;
-  border-radius: 20px;
-  box-shadow: var(--boxShadow);
 }
 
 .slideUp:hover {
